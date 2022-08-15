@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invocador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row g-0">
+            <h1 class="text-white">Buscar invocador</h1>
+            <div class="alert alert-primary col-sm-5 col-md-3">
+                API Summoner-V4 do portal Riot Developer
+            </div>
+        </div>
+        <form action="" class="col-sm-5 col-md-3">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <label for="nm_invocador" class="form-label text-white">Nome do invocador:</label>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <input type="text" class="form-control" name="nm_invocador" id="nm_invocador"
+                        placeholder="Digite o nome do invocador">
+                </div>
+                <div class="col-md-12 mb-3">
+                    <button class="btn btn-primary" id="buscar">Buscar</button>
+                </div>
+            </div>
+        </form>
+        <div class="row g-0">
+            <div class="card col-sm-5 col-md-3 mb-3">
+                <img src="http://ddragon.leagueoflegends.com/cdn/12.15.1/img/profileicon/687.png" class="card-img-top img-fluid"
+                    alt="Profile Icon" id="profile_img">
+                <div class="card-body">
+                    <h5 class="card-title" id="name">Nome do invocador</h5>
+                    <p class="card-text">Level: <span id="lvl_invocador"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0">
+            <small class="text-muted"><strong>By Lucas Hayashi</strong></small>
+        </div>
+
+    </div>
+    <video autoplay muted loop id="bgVideo">
+        <source src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-league-display-2017/en_US/cb24025fade09e3f965776440dffcc65024d3266/assets/img/content/splash/videos/animated-bloodmoon-diana.webm" type="video/webm">
+    </video>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

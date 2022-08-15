@@ -1,0 +1,35 @@
+body {
+    background-color: #F2F2F2;
+}
+
+.container-fluid {
+    position: absolute;
+} 
+
+#bgVideo {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    object-position:center;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 576px) {
+    #bgVideo {
+        object-position:right;
+    }
+}
+
+/* @media (max-aspect-ratio: 16/9) {
+    #bgVideo {
+
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #bgVideo {
+        width: auto;
+        height: 100%;
+    }
+} */
